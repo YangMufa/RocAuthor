@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "程序员菜鲲",
-  description: "程序员菜鲲个人介绍",
+  title: "编程练习生",
+  description: "编程练习生个人介绍",
 };
 
 export default function RootLayout({

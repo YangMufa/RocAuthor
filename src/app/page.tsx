@@ -40,18 +40,18 @@ export default function Home() {
     const [showModal,setShowModal] = useState(false); //qq弹框
     const [popPicture,setPopPicture] = useState(""); //弹框图片
     const [site, ] = useState([
-        { title: "RocBlog", introduce: "程序员菜鲲的个人博客", img: siteProjectIcon2, link: "https://RocBlog.trainees.cn" },
-        { title: "RocAdmin.Net", introduce: "基于.Net的鲲鹏中后台快速开发框架演示站", img: siteProjectIcon3, link: "https://RocAdmin.trainees.cn" },
-        { title: "RocFlow.Net", introduce: "基于.Net的鲲鹏工作流快速开发框架演示站", img: siteProjectIcon6, link: "https://RocFlow.trainees.cn" },
-        { title: "RocJilehe", introduce: "基于React的鸡乐盒演示站", img: siteProjectIcon6, link: "https://RocJilehe.trainees.cn" },
-        { title: "RocAuthor(本站)", introduce: "基于React的程序员在线简历演示站", img: siteProjectIcon6, link: "https://RocAuthor.trainees.cn" },
+        { title: "RocBlog", introduce: "基于.Net10+Vue3编程练习生的个人博客", img: siteProjectIcon2, link: "https://www.yangmufa.cn" },
+        { title: "RocAdmin", introduce: "基于.Net10+Vue3的鲲鹏中后台快速开发框架演示站", img: siteProjectIcon3, link: "https://admin.yangmufa.cn" },
+        { title: "RocFlow", introduce: "基于.Net10+Vue3的鲲鹏工作流快速开发框架演示站", img: siteProjectIcon6, link: "https:/flow.yangmufa.cn" },
+        { title: "RocJilehe", introduce: "基于JavaScript的鸡乐盒演示站", img: siteProjectIcon6, link: "https://jilehe.yangmufa.cn" },
+        { title: "RocAuthor(本站)", introduce: "基于Vue3的程序员在线简历演示站", img: siteProjectIcon6, link: "https://author.yangmufa.cn" },
     ]);// 网站
     const [project, ] = useState([
-        { title: "RocAdmin.Net", introduce: "基于C#+.Net8+Abp.vNext9+Furion5+PostgreSql18+Vue3的DDD领域驱动微服务后台管理框架, 内置用户权限管理、日志、工作流、博客、社区、代码生成、Admin等模块,可根据需要新增模块即可轻松集成.，、", img: siteProjectIcon3, link: "https://github.com/DevCaikun/RocAdmin.Net" },
-        { title: "RocFlow.Net", introduce: "基于RocAdmin.Net的工作流框架", img: siteProjectIcon6, link: "https://github.com/DevCaikun/RocFlow.Net" },
-        { title: "RocBlog", introduce: "基于JDK21+SpringBoot3+PostgreSql18+React19的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块", img: siteProjectIcon2, link: "https://github.com/DevCaikun/RocBlog" },
-        { title: "RocAuthor", introduce: "炫酷唯美的 程序员专属 个人简介,采用TypeScript5 + Vite6 + Axios2 + React19 + AntDesign5 + SCSS2", img: siteProjectIcon1, link: "https://github.com/DevCaikun/RocAuthor" },
-        { title: "RocJilehe", introduce: "唱、跳、rap、篮球,采用TypeScript5 + Vite6 + Axios2 + React19 + AntDesign5 + SCSS2", img: siteProjectIcon1, link: "https://github.com/DevCaikun/RocJilehe" },
+        { title: "RocAdmin", introduce: "基于.Net10+Abp.vNext9+Furion5+PostgreSql18+Vue3的DDD领域驱动微服务后台管理框架, 内置用户权限管理、日志、代码生成 等模块,可根据需要新增模块即可轻松集成.", img: siteProjectIcon3, link: "https://github.com/yangmufa/RocAdmin" },
+        { title: "RocFlow", introduce: "基于.Net10+Vue3的工作流框架", img: siteProjectIcon6, link: "https://github.com/yangmufa/RocFlow" },
+        { title: "RocBlog", introduce: "基于.Net10+PostgreSql18+Vue3的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块", img: siteProjectIcon2, link: "https://github.com/yangmufa/RocBlog" },
+        { title: "RocAuthor", introduce: "炫酷唯美的 程序员专属 个人简介,采用TypeScript5 + Vite6 + Axios2 + Vue3 + NextJs15 + AntDesign5 + SCSS2", img: siteProjectIcon1, link: "https://github.com/yangmufa/RocAuthor" },
+        { title: "RocJilehe", introduce: "唱、跳、rap、篮球,基于JavaScript + HTML5 + CSS3", img: siteProjectIcon1, link: "https://github.com/yangmufa/RocJilehe" },
     ]); // 项目
     const currentYear = new Date().getFullYear();
 
@@ -137,27 +137,27 @@ export default function Home() {
                                     <ul className="left-time-line">
                                         <li>
                                             <div className="focus"></div>
-                                            <a className="link-text" href="https://rocflow.trainees.cn">RocFlow.Net<br/>：基于RocAdmin.Net的企业级工作流框架上线开源</a>
+                                            <a className="link-text" href="https://admin.yangmufa.cn">RocAdmin<br/>：基于.Net10+Abp.vNext9+ Vue3+Postgresql18的企业级中后台快速开发框架上线开源</a>
+                                            <div>：2026.7</div>
+                                        </li>
+                                        <li>
+                                            <div className="focus"></div>
+                                            <a className="link-text" href="https://flow.yangmufa.cn">RocFlow<br/>：基于.Net8的企业级工作流框架上线开源</a>
                                             <div>：2025.12</div>
                                         </li>
                                         <li>
                                             <div className="focus"></div>
-                                            <a className="link-text" href="https://rocadmin.trainees.cn">RocAdmin.Net<br/>：基于Abp.vNext9的企业级中后台快速开发框架上线开源</a>
-                                            <div>：2025.7</div>
+                                            <div>
+                                                <a className="link-text" href="https://www.yangmufa.cn">RocBlog-V3<br/>：基于.Net8和Vue3技术构建的第3版博客知识库系统上线开源</a>
+                                            </div>
+                                            <div>：2025.4</div>
                                         </li>
                                         <li>
                                             <div className="focus"></div>
                                             <div>
-                                                <a className="link-text" href="https://rocauthor.trainees.cn">RocAuthor<br/>：基于React19的程序员在线简历上线开源</a>
+                                                <a className="link-text" href="#">RocAuthor<br/>：基于Vue3的程序员在线简历上线开源</a>
                                             </div>
                                             <div>：2024.12</div>
-                                        </li>
-                                        <li>
-                                            <div className="focus"></div>
-                                            <div>
-                                                <a className="link-text" href="https://www.caikun.dev">RocBlog<br/>：基于Java21和React19技术博客知识库系统初版上线开源</a>
-                                            </div>
-                                            <div>：2024.10</div>
                                         </li>
                                         <li>
                                             <div className="focus"></div>
@@ -183,6 +183,13 @@ export default function Home() {
                                         <li>
                                             <div className="focus"></div>
                                             <div>
+                                                <a className="link-text" href="#">RocBlog-V2<br/>使用Java8+Vue2构建的人生第2版博客网站上线</a>
+                                            </div>
+                                            <div>：2021.9</div>
+                                        </li>
+                                        <li>
+                                            <div className="focus"></div>
+                                            <div>
                                                 <a className="link-text" href="#">加入贵阳XX科技集团<br/>：负责某省东\南部某项业务的售后和运营</a>
                                             </div>
                                             <div>：2020.12</div>
@@ -190,8 +197,7 @@ export default function Home() {
                                         <li>
                                             <div className="focus"></div>
                                             <div>
-                                                <a className="link-text"
-                                                   href="http://www.yangmufa.com">放暑假在家搭建人生第一个网站</a>
+                                                <a className="link-text" href="#">RocBlog-V1<br/>放暑假在家使用WorldPress构建的人生第1版博客网站上线</a>
                                             </div>
                                             <div>：2018.8</div>
                                         </li>
@@ -212,8 +218,8 @@ export default function Home() {
                             )}
                             <div className="welcome">
                                 Hello I' m
-                                <span className="gradientText">DevCaikun</span>
-                                <h6>你好，我是程序员菜鲲</h6>
+                                <span className="gradientText">YangMufa</span>
+                                <h6>练习编程两年半,喜欢CV、Tab、Agent 。</h6>
                             </div>
                             <div className="description">
                                 👦
@@ -231,11 +237,11 @@ export default function Home() {
                             <div className="iconContainer">
                                 <Popover title="" trigger="click" content={
                                     <div>
-                                        <Button type="link" href="https://gitee.com/DevCaikun/TraineesHomepage">
+                                        <Button type="link" href="https://gitee.com/yangmufa">
                                             Gitee
                                         </Button>
                                         <br/>
-                                        <Button type="link" href="https://github.com/DevCaikun/TraineesHomepage">
+                                        <Button type="link" href="https://github.com/yangmufa">
                                             Github
                                         </Button>
                                     </div>
@@ -248,7 +254,7 @@ export default function Home() {
                                 {/* 第二个 Popover */}
                                 <Popover title="网易邮箱" trigger="click" content={
                                     <Button type="link" href="https://mail.163.com">
-                                        DevCaikun@163.com
+                                        yangmufa@163.com
                                     </Button>
                                 }>
                                     <div className="iconItem">
@@ -327,7 +333,7 @@ export default function Home() {
                 </Content>
                 <Footer className={`${isDarkMode ? 'dark' : 'light'} layout-footer`}>
                     <div className="layout-footer-left">
-                        RocAuthor © {currentYear} Created by 程序员菜鲲
+                        RocAuthor © {currentYear} Created by 编程练习生
                     </div>
                     <div className="layout-footer-right">
                         <img
@@ -335,12 +341,7 @@ export default function Home() {
                             alt=""
                             style={{ width: 15, height: 15, marginRight: 5 }}
                         />
-                        <a
-                            href="https://beian.miit.gov.cn"
-                            className="mr-4 hover:underline md:mr-6"
-                        >
-                            备案号：黔ICP备19007557号
-                        </a>
+                        <a href="https://beian.miit.gov.cn" className="mr-4 hover:underline md:mr-6" >备案号：黔ICP备19007557号</a>
                     </div>
                 </Footer>
             </Layout>
