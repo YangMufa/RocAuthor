@@ -110,7 +110,7 @@
             </div>
             <div class="welcome">
               Hello&nbsp;I'&nbsp;m
-              <span class="gradientText">YangMufa5</span>
+              <span class="gradientText">YangMufa</span>
               <h6>练习编程两年半,喜欢CV、Tab、Agent 。</h6>
             </div>
             <div class="description">
@@ -139,7 +139,7 @@
               </a-popover>
               <a-popover title="网易邮箱" trigger="click">
                 <template #content>
-                  <a-button link type="link" href="https://mail.163.com">DevCaikun@163.com</a-button>
+                  <a-button link type="link" href="https://mail.163.com">yangmufa@163.com</a-button>
                 </template>
                 <div class="iconItem">
                   <img src="../assets/svg/mail.svg" alt="">
@@ -225,6 +225,8 @@ import snakeLightSvg from '@/assets/svg/snake-Light.svg';
 import siteProjectIcon1 from '@/assets/img/i1.png';
 import siteProjectIcon2 from '@/assets/img/i2.png';
 import siteProjectIcon3 from '@/assets/img/i3.png';
+import siteProjectIcon4 from '@/assets/img/i4.png';
+import siteProjectIcon5 from '@/assets/img/i5.png';
 import siteProjectIcon6 from '@/assets/img/i6.png';
 import qqImg from '@/assets/img/qqGroup.jpg';
 import weixinImg from '@/assets/img/weixinGroup.jpg';
@@ -238,19 +240,19 @@ const popPicture = ref(""); //弹框图片
 
 // 网站
 const site = ref([
-  { title: "RocBlog", introduce: "基于.Net10+Vue3编程练习生的个人博客", img: siteProjectIcon2, link: "https://www.yangmufa.cn" },
-  { title: "RocAdmin", introduce: "基于.Net10+Vue3的鲲鹏中后台快速开发框架演示站", img: siteProjectIcon3, link: "https://admin.yangmufa.cn" },
-  { title: "RocFlow", introduce: "基于.Net10+Vue3的鲲鹏工作流快速开发框架演示站", img: siteProjectIcon6, link: "https:/flow.yangmufa.cn" },
-  { title: "RocJilehe", introduce: "基于JavaScript的鸡乐盒演示站", img: siteProjectIcon6, link: "https://jilehe.yangmufa.cn" },
-  { title: "RocAuthor(本站)", introduce: "基于Vue3的程序员在线简历演示站", img: siteProjectIcon6, link: "https://author.yangmufa.cn" },
+  { title: "RocBlog", introduce: "基于.Net10+Vue3编程练习生的个人博客", img: siteProjectIcon1, link: "https://www.yangmufa.cn" },
+  { title: "RocAdmin", introduce: "基于.Net10+Vue3的鲲鹏中后台快速开发框架演示站", img: siteProjectIcon2, link: "https://admin.yangmufa.cn" },
+  { title: "RocFlow", introduce: "基于.Net10+Vue3的鲲鹏工作流快速开发框架演示站", img: siteProjectIcon3, link: "https:/flow.yangmufa.cn" },
+  { title: "RocJilehe", introduce: "基于JavaScript的鸡乐盒演示站", img: siteProjectIcon5, link: "https://jilehe.yangmufa.cn" },
+  { title: "RocAuthor(本站)", introduce: "基于Vue3的程序员在线简历演示站", img: siteProjectIcon6, link: "#" },
 ]);
 // 项目
 const project = ref([
-  { title: "RocAdmin", introduce: "基于.Net10+Abp.vNext9+Furion5+PostgreSql18+Vue3的DDD领域驱动微服务后台管理框架, 内置用户权限管理、日志、代码生成 等模块,可根据需要新增模块即可轻松集成.", img: siteProjectIcon3, link: "https://github.com/yangmufa/RocAdmin" },
-  { title: "RocFlow", introduce: "基于.Net10+Vue3的工作流框架", img: siteProjectIcon6, link: "https://github.com/yangmufa/RocFlow" },
-  { title: "RocBlog", introduce: "基于.Net10+PostgreSql18+Vue3的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块", img: siteProjectIcon2, link: "https://github.com/yangmufa/RocBlog" },
-  { title: "RocAuthor", introduce: "炫酷唯美的 程序员专属 个人简介,采用TypeScript5 + Vite6 + Axios2 + Vue3 + NextJs15 + AntDesign5 + SCSS2", img: siteProjectIcon1, link: "https://github.com/yangmufa/RocAuthor" },
-  { title: "RocJilehe", introduce: "唱、跳、rap、篮球,基于JavaScript + HTML5 + CSS3", img: siteProjectIcon1, link: "https://github.com/yangmufa/RocJilehe" },
+  { title: "RocAdmin",img: siteProjectIcon6, link: "https://github.com/yangmufa/RocAdmin", introduce: "基于.Net10+Abp.vNext9+Furion5+PostgreSql18+Vue3的DDD领域驱动微服务后台管理框架, 内置用户权限管理、日志、代码生成 等模块,可根据需要新增模块即可轻松集成.",  },
+  { title: "RocFlow", img: siteProjectIcon5, link: "https://github.com/yangmufa/RocFlow",introduce: "基于.Net10+Vue3的工作流框架",  },
+  { title: "RocBlog", img: siteProjectIcon4, link: "https://github.com/yangmufa/RocBlog",introduce: "基于.Net10+PostgreSql18+Vue3的博客项目, 内置后台管理、权限管理、代码生成、资源导航、技术百科等模块",  },
+  { title: "RocAuthor", img: siteProjectIcon3, link: "https://github.com/yangmufa/RocAuthor",introduce: "炫酷唯美的 程序员专属 个人简介,采用TypeScript5 + Vite6 + Axios2 + Vue3 + NextJs15 + AntDesign5 + SCSS2",  },
+  { title: "RocJilehe", img: siteProjectIcon2, link: "https://github.com/yangmufa/RocJilehe",introduce: "唱、跳、rap、篮球,基于JavaScript + HTML5 + CSS3",  },
 ]);
 
 // 监听主题设定的值如果发生变化则动态设定对应的class
